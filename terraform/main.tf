@@ -8,7 +8,7 @@ resource "helm_release" "myapp" {
   recreate_pods = true
   force_update = true
   values = [
-    file("${path.module}/${var.environment}/values_hello.yaml")  # Optional: Use custom values file
+    file("${path.module}/${var.environment}/values_world.yaml")  # Optional: Use custom values file
   ]
     set {
     name  = "image.tag"
