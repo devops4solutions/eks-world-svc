@@ -8,15 +8,15 @@
         <version>2.4.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>client</groupId>
-    <artifactId>hello-world-client</artifactId>
+    <groupId>worldservice</groupId>
+    <artifactId>worldservice</artifactId>
     <version>1</version>
-    <name>hello-world-client</name>
-    <description>Client for hello world with microservices example</description>
+    <name>worldservice</name>
+    <description>World Service for Microservices Demo</description>
 
     <properties>
         <java.version>11</java.version>
-        <spring-cloud.version>2020.0.0</spring-cloud.version>
+        <spring-cloud.version>2020.0.0-RC1</spring-cloud.version>
     </properties>
 
     <dependencies>
@@ -24,14 +24,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-   
-
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-      <dependency>
     <groupId>io.micrometer</groupId>
     <artifactId>micrometer-registry-prometheus</artifactId>
 </dependency>
@@ -40,6 +33,11 @@
     <artifactId>spring-boot-starter-actuator</artifactId>
 </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
