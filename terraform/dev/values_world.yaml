@@ -17,9 +17,9 @@ ingress:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/healthcheck-path: /world
-    alb.ingress.kubernetes.io/group.name: myapp
+    alb.ingress.kubernetes.io/group.name: myapp1
   hosts:
-    - host: world.devops4solutions.com
+    - host: world.${ENVIRONMENT}.devops4solutions.com
       paths:
         - path: /world
           pathType: Prefix
