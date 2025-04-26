@@ -1,6 +1,6 @@
 resource "aws_route53_record" "eks_record" {
   zone_id = data.aws_route53_zone.zone.zone_id
-  name    = "hello.${var.environment}.${var.domain_name}"
+  name    = "world.${var.environment}.${var.domain_name}"
   type    = "A"
   alias {
     name                   = data.aws_lb.lb.dns_name
